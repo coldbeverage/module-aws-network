@@ -1,6 +1,6 @@
-variable "org_name" {
+variable "vpc_name" {
   type        = string
-  description = "org_name is the underlying entity this network will be hosted."
+  description = "Name of the VPC, will be used in all resource naming"
 }
 
 variable "network" {
