@@ -3,8 +3,10 @@ provider "aws" {
 }
 
 locals {
-  vpc_name     = "${var.vpc_name}-${var.network}"
-  cluster_name = "${var.cluster_name}-${var.network}"
+  # coldbeverage-dev
+  vpc_name = "${var.org_name}-${var.network}"
+  # coldbeverage-dev-mur-cluster
+  cluster_name = "${var.org_name}-${var.network}-${var.project}-cluster"
 }
 
 ## AWS VPC Definition

@@ -1,6 +1,11 @@
-variable "vpc_name" {
+variable "org_name" {
   type        = string
-  description = "Name of the VPC, will be used in all resource naming"
+  description = "Name of the organization, used in resource naming"
+}
+
+variable "project" {
+  type        = string
+  description = "name of the project, used in resource naming"
 }
 
 variable "network" {
@@ -37,9 +42,4 @@ variable "private_subnet_a_cidr" {
 
 variable "private_subnet_b_cidr" {
   type = string
-}
-
-variable "cluster_name" {
-  type        = string
-  description = "Name for Kubernetes cluster"
 }
