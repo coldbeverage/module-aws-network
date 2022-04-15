@@ -5,7 +5,7 @@ provider "aws" {
 locals {
   # {org}-{network}-vpc
   vpc_name     = "${var.vpc_name}-${var.network}"
-  cluster_name = "${var.vpc_name}-${var.network}-${var.cluster_name}"
+  cluster_name = "${var.cluster_name}-${var.network}"
 }
 
 ## AWS VPC Definition
